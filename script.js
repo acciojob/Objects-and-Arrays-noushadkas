@@ -1,19 +1,28 @@
 const players = ["John", "Bob", "Alice", "Poppy"];
+
 const person = {
   name: "John Doe",
   age: 80,
 };
 
-// Create a copy of the players array
-const team = [...players];
 
-// Create another copy of the players array
-const team1 = players.slice();
+let team  = players;
 
-// Create a copy of the person object
-const cap1 = { ...person };
+let team1 = [...players];
 
-// Make the variables accessible in the global scope
+let cap1 = {
+	...person
+};
+
+console.log(team);
+console.log(players);
+//console.log(team1);
+//console.log(cap1);
+
+// Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
+
+window.players = players;
+window.person = person;
 window.team = team;
 window.team1 = team1;
 window.cap1 = cap1;
